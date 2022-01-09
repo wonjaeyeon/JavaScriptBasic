@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sadf</title>
+    </head>
+    <body>
+        <script>
+            document.write('<p>1985년3월10일은' + getYoil(1985,3,10)+ '</p>');
+            document.write('<p>2001년3월10일은' + getYoil(2001,3,10)+ '</p>');
+            document.write('<p>2018년3월10일은' + getYoil(2018,3,10)+ '</p>');
+
+            function getYoil(year, month, day){
+                var Yoil=['일요일','월요일','화요일','수요일','목요일','금요일','토요일'];
+                var date=new Date(year,month,day);
+                return Yoil[date.getDay()];
+            }
+        </script>
+    </body>
+</html>

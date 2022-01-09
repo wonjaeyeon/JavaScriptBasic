@@ -1,0 +1,21 @@
+<!DOCTYPE html> <!-- 어떤 버전의 html인지 웹 브라우저에 전달-->
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>테스트 웹페이지</title>
+    </head>
+    <body>
+        <script>
+            var ans = window.prompt('정수를 입력하세요');
+            ans = parseInt(ans);
+            if(ans > 5){
+                window.alert('5보다 크다');
+            } else if(ans == 5){
+                window.alert('5와 같다');
+            } 
+            else{
+                window.alert('5보다 작다');
+            }
+        </script>
+    </body>
+</html>
